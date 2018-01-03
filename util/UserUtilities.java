@@ -259,11 +259,12 @@ public class UserUtilities {
 		(new WebDriverWait(driver, 10))
 		.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"checkout-payment-method-load\"]/div/div/div[3]/div[2]/div[4]/div/button"))).click();
 
-		String orderNumString = driver.findElement(By.xpath("//*[@id=\'maincontent\']/div[3]/div/div[2]/p[1]/a/strong"))
-				.toString();
-		int orderNum = Integer.parseInt(orderNumString);
-
-		return orderNum;
+//		String orderNumString = driver.findElement(By.xpath("//*[@id=\'maincontent\']/div[3]/div/div[2]/p[1]/a/strong"))
+//				.toString();
+//		int orderNum = Integer.parseInt(orderNumString);
+//
+//		return orderNum;
+		return 0;
 
 	}
 
